@@ -1,4 +1,4 @@
-package HW_02May24;
+package HW1_02May24;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
