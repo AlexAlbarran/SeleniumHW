@@ -30,18 +30,18 @@ public class AdvXpath {
 
         // to reverse text
         String textbook1 = book1.getAttribute("value"); // Get the original text
-        String reversedText2 = new StringBuilder(textbook1).reverse().toString(); // Reverse the text
+        String reversedText1 = new StringBuilder(textbook1).reverse().toString(); // Reverse the text
         // this is for box 2
         WebElement reverseB2 = driver.findElement(By.xpath("//input[@id='least-favorite']/preceding-sibling::input[1]"));
-        reverseB2.sendKeys(reversedText2); // Insert the reversed text into reverseB2
+        reverseB2.sendKeys(reversedText1); // Insert the reversed text into reverseB2
 
 
         // to reverse text
         String textbook2 = book2.getAttribute("value"); // Get the original text
-        String reversedText1 = new StringBuilder(textbook2).reverse().toString(); // Reverse the text
+        String reversedText2 = new StringBuilder(textbook2).reverse().toString(); // Reverse the text
         // this is for box 3
         WebElement reverseB1 = driver.findElement(By.xpath("//input[@id='least-favorite']"));
-        reverseB1.sendKeys(reversedText1); // Insert the reversed text into reverseB1
+        reverseB1.sendKeys(reversedText2); // Insert the reversed text into reverseB1
 
 
         // this is for box 1
