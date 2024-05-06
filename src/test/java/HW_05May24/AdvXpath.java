@@ -46,7 +46,7 @@ public class AdvXpath {
 
         // this is for box 1
         WebElement grandParent= driver.findElement(By.xpath("//div[@id='familyTree']/child::input[1]"));
-        grParent.sendKeys("GrandParent");
+        grandParent.sendKeys("GrandParent");
 
         // this is for box 2
         WebElement parent= driver.findElement(By.xpath("//div[@id='familyTree']/child::input[2]"));
