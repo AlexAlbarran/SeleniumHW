@@ -20,29 +20,17 @@ public class AdvXpath {
         WebElement book3 = driver.findElement(By.xpath("//input[@id='favourite-book']/following-sibling::input[2]"));
         book3.sendKeys("War and Peace");
 
-        // to reverse text
-        String textbook3 = book3.getAttribute("value"); // Get the original text
-        String reversedText3 = new StringBuilder(textbook3).reverse().toString(); // Reverse the text
         // this is for box 1
-        WebElement reverseB3 = driver.findElement(By.xpath("//input[@id='least-favorite']/preceding-sibling::input[2]"));
-        reverseB3.sendKeys(reversedText3); // Insert the reversed text into reverseB2
+        WebElement reverseB1= driver.findElement(By.xpath("//input[@id='least-favorite']/preceding-sibling::input[2]"));
+        reverseB1.sendKeys("War and Peace");
 
-
-        // to reverse text
-        String textbook1 = book1.getAttribute("value"); // Get the original text
-        String reversedText1 = new StringBuilder(textbook1).reverse().toString(); // Reverse the text
         // this is for box 2
-        WebElement reverseB1 = driver.findElement(By.xpath("//input[@id='least-favorite']/preceding-sibling::input[1]"));
-        reverseB1.sendKeys(reversedText1); // Insert the reversed text into reverseB2
+        WebElement reverseB2= driver.findElement(By.xpath("//input[@id='least-favorite']/preceding-sibling::input[1]"));
+        reverseB2.sendKeys("Lord of the Rings");
 
-
-        // to reverse text
-        String textbook2 = book2.getAttribute("value"); // Get the original text
-        String reversedText2 = new StringBuilder(textbook2).reverse().toString(); // Reverse the text
         // this is for box 3
-        WebElement reverseB2 = driver.findElement(By.xpath("//input[@id='least-favorite']"));
-        reverseB2.sendKeys(reversedText2); // Insert the reversed text into reverseB1
-
+        WebElement reverseB3= driver.findElement(By.xpath("//input[@id='least-favorite']"));
+        reverseB3.sendKeys("The Hobbit");
 
         // this is for box 1
         WebElement grandParent= driver.findElement(By.xpath("//div[@id='familyTree']/child::input[1]"));
