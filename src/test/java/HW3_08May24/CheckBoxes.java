@@ -1,3 +1,5 @@
+package HW3_08May24;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -5,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class HW3_08May24 {
+public class CheckBoxes {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().fullscreen();
@@ -26,14 +28,15 @@ public class HW3_08May24 {
 
         //WebElement showBtn= driver.findElement(By.xpath("//button[text()='Show Checkboxes']"));
         //showBtn.click();
-        //Thread.sleep(3000);
 
-        //WebElement enableBtn= driver.findElement(By.xpath("//button[text()='Enable Checkboxes']"));
-        //enableBtn.click();
-        //Thread.sleep(3000);
+        WebElement enableBtn= driver.findElement(By.xpath("//button[text()='Enable Checkboxes']"));
+        enableBtn.click();
 
-        WebElement hideBtn= driver.findElement(By.xpath("//button[text()='Hide Checkboxes']"));
-        hideBtn.click();
+        //WebElement hideBtn= driver.findElement(By.xpath("//button[text()='Hide Checkboxes']"));
+        //hideBtn.click();
+
+        WebElement box4= driver.findElement(By.xpath("//input[@value='Checkbox-4']"));
+        box4.click();
 
 
     }
